@@ -76,7 +76,7 @@ const unsigned char %s[%d] LOCATION_EXTFLASH_ATTRIBUTE = {
 			if position == 0 {
 				outfile.WriteString(fmt.Sprintf("\t0x%02x", value))
 			} else if position == 15 {
-				outfile.WriteString(fmt.Sprintf(", 0x%02x\n", value))
+				outfile.WriteString(fmt.Sprintf(", 0x%02x,\n", value))
 			} else {
 				outfile.WriteString(fmt.Sprintf(", 0x%02x", value))
 			}
